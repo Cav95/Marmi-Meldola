@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmi Meldola - Brochure Ufficiale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'stone-dark': '#2c2c2c',
+                        'stone-light': '#f4f4f4',
+                        'gold-accent': '#c5a059'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Stili per la stampa della brochure */
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .no-print { display: none; }
+            .page-break { page-break-before: always; }
+        }
+        .hero-pattern {
+            background-color: #1a1a1a;
+            background-image: radial-gradient(#333 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-stone-light text-stone-dark antialiased">
+
+    <!-- Copertina (Cover) -->
+    <header class="relative w-full min-h-screen flex flex-col items-center justify-center text-center p-6 hero-pattern text-white">
+        <div class="absolute inset-0 bg-black/40 z-0"></div>
+        <div class="relative z-10 max-w-4xl mx-auto border border-white/20 p-12 backdrop-blur-sm bg-black/20">
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-4 tracking-wider uppercase">Marmi Meldola</h1>
+            <div class="w-24 h-1 bg-gold-accent mx-auto mb-8"></div>
+            <p class="text-xl md:text-2xl font-light mb-6">Lavorazione Marmi e Pietre Naturali</p>
+            <p class="text-md md:text-lg text-gray-300 font-light italic">Design e Stile classico o moderno per ogni applicazione.</p>
+        </div>
+        
+        <div class="absolute bottom-10 z-10 animate-bounce text-white/70">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </header>
+
+    <!-- Pagina 2: Chi Siamo & Filosofia -->
+    <section class="py-20 px-6 md:px-12 max-w-7xl mx-auto page-break">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="font-serif text-4xl font-bold mb-6 text-stone-dark">L'Arte di Plasmare la Natura</h2>
+                <div class="w-16 h-1 bg-gold-accent mb-6"></div>
+                <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                    Artigianalità e tecnologia si fondono nella nostra azienda per trasformare il materiale grezzo in prodotti unici e personalizzati. 
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Selezioniamo <strong>marmi, pietre naturali, graniti, onici e travertini</strong>, oppure pietre ricostruite che simulano l'aspetto naturale delle rocce, solo dai migliori fornitori in tutto il mondo. Il nostro obiettivo è realizzare rivestimenti e pavimenti, sia per interni che per esterni, che siano unici e duraturi nel tempo.
+                </p>
+            </div>
+            <div class="relative h-96 w-full bg-gray-300 flex items-center justify-center rounded-sm shadow-xl overflow-hidden">
+                
+                <div class="absolute inset-0 flex items-center justify-center bg-stone-300 text-stone-600 font-serif text-xl border-4 border-white">
+                    <img src="marmi-meldola-cucine-cover.jpg" alt="" srcset="">
+                                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagina 3: I Materiali -->
+    <section class="py-20 px-6 md:px-12 bg-white page-break">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="font-serif text-4xl font-bold mb-6 text-stone-dark">La Nostra Selezione di Materiali</h2>
+            <div class="w-16 h-1 bg-gold-accent mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Materiali classici e innovativi di altissima qualità per soddisfare ogni esigenza progettuale e architettonica.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <!-- Card Materiale -->
+            <div class="group relative bg-stone-100 p-8 text-center border border-stone-200 hover:border-gold-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <i class="fas fa-gem text-3xl text-gold-accent mb-4"></i>
+                <h3 class="font-serif text-xl font-semibold">Marmi</h3>
+            </div>
+            <div class="group relative bg-stone-100 p-8 text-center border border-stone-200 hover:border-gold-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <i class="fas fa-cubes text-3xl text-gold-accent mb-4"></i>
+                <h3 class="font-serif text-xl font-semibold">Graniti</h3>
+            </div>
+            <div class="group relative bg-stone-100 p-8 text-center border border-stone-200 hover:border-gold-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <i class="fas fa-mountain text-3xl text-gold-accent mb-4"></i>
+                <h3 class="font-serif text-xl font-semibold">Pietre Naturali</h3>
+            </div>
+            <div class="group relative bg-stone-100 p-8 text-center border border-stone-200 hover:border-gold-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <i class="fas fa-layer-group text-3xl text-gold-accent mb-4"></i>
+                <h3 class="font-serif text-xl font-semibold">Quarziti</h3>
+            </div>
+            <div class="group relative bg-stone-100 p-8 text-center border border-stone-200 hover:border-gold-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <i class="fas fa-cube text-3xl text-gold-accent mb-4"></i>
+                <h3 class="font-serif text-xl font-semibold">Dekton</h3>
+            </div>
+            <div class="group relative bg-stone-100 p-8 text-center border border-stone-200 hover:border-gold-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <i class="fas fa-puzzle-piece text-3xl text-gold-accent mb-4"></i>
+                <h3 class="font-serif text-xl font-semibold text-sm">Agglomerati di Quarzo</h3>
+            </div>
+            <div class="group relative bg-stone-100 p-8 text-center border border-stone-200 hover:border-gold-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <i class="fas fa-shield-alt text-3xl text-gold-accent mb-4"></i>
+                <h3 class="font-serif text-xl font-semibold">Lapitec</h3>
+            </div>
+            <div class="group relative bg-stone-100 p-8 text-center border border-stone-200 hover:border-gold-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                <i class="fas fa-check-double text-3xl text-gold-accent mb-4"></i>
+                <h3 class="font-serif text-xl font-semibold">Quarziti K-Proof</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagina 4: Lavorazioni -->
+    <section class="py-20 px-6 md:px-12 bg-stone-dark text-white page-break">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 relative h-96 w-full flex items-center justify-center rounded-sm shadow-xl overflow-hidden">
+                     <!-- Immagine Segnaposto -->
+                    <div class="absolute inset-0 flex items-center justify-center bg-stone-700 text-stone-300 font-serif text-xl border-4 border-stone-600">
+                                            </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="font-serif text-4xl font-bold mb-6 text-white">Le Nostre Lavorazioni</h2>
+                    <div class="w-16 h-1 bg-gold-accent mb-8"></div>
+                    <p class="text-lg leading-relaxed mb-8 text-gray-300">
+                        Marmi Meldola utilizza diverse tipologie di lavorazione e finitura realizzabili su tutti i nostri materiali, oltre alla creazione di particolari tecnici su misura.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-200">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-gold-accent"></i> <span>Fiammatura</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-gold-accent"></i> <span>Bocciardatura</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-gold-accent"></i> <span>Sabbiatura</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-gold-accent"></i> <span>Levigatura</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-gold-accent"></i> <span>Lucidatura</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-gold-accent"></i> <span>Spazzolatura</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-gold-accent"></i> <span>Fiammatura / Spazzolatura</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-gold-accent"></i> <span>Sabbiatura / Spazzolatura</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Retro Copertina / Contatti -->
+    <footer class="py-20 px-6 md:px-12 bg-black text-white text-center page-break flex flex-col items-center justify-center min-h-[60vh]">
+        <h2 class="font-serif text-4xl font-bold mb-8 uppercase tracking-widest">Marmi Meldola</h2>
+        <div class="w-24 h-px bg-gold-accent mx-auto mb-12"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-4xl mx-auto mb-16">
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full border border-gold-accent flex items-center justify-center mb-4">
+                    <i class="fas fa-map-marker-alt text-2xl text-gold-accent"></i>
+                </div>
+                <h4 class="font-serif text-xl mb-2">Sede</h4>
+                <p class="text-gray-400 font-light">via G. Galilei, 42<br>47014 Meldola (FC)</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full border border-gold-accent flex items-center justify-center mb-4">
+                    <i class="fas fa-phone text-2xl text-gold-accent"></i>
+                </div>
+                <h4 class="font-serif text-xl mb-2">Contatti</h4>
+                <p class="text-gray-400 font-light">Tel.: 0543-493252</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full border border-gold-accent flex items-center justify-center mb-4">
+                    <i class="fas fa-info text-2xl text-gold-accent"></i>
+                </div>
+                <h4 class="font-serif text-xl mb-2">Azienda</h4>
+                <p class="text-gray-400 font-light">P. IVA: 00357090406<br>www.marmimeldola.com</p>
+            </div>
+        </div>
+        
+        <p class="text-sm text-gray-500 mt-10 tracking-wider">© Copyright Marmi Meldola. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
