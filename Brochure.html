@@ -50,10 +50,20 @@
 
             /* Evita che header occupi tutta l'altezza su stampa */
             header {
-                min-height: auto !important;
-                height: auto !important;
+                min-height: calc(297mm - 20mm) !important;
+                height: calc(297mm - 20mm) !important;
                 padding: 12mm !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
                 page-break-after: avoid;
+                background: #ffffff !important;
+                color: #1f2937 !important;
+            }
+
+            header.hero-pattern {
+                background-image: none !important;
+                background-color: #ffffff !important;
             }
 
             /* Nasconde l'overlay scuro presente in copertina (ha classe z-0) */
@@ -63,17 +73,29 @@
 
             /* Limita l'altezza del contenitore del logo */
             header .relative.z-10 {
+                position: relative !important;
+                z-index: 10 !important;
                 max-height: 120mm;
                 overflow: hidden;
+                background: transparent !important;
+                backdrop-filter: none !important;
             }
 
             /* Ridimensiona il logo per stare nella pagina */
             header img[alt="Marmi Meldola"] {
+                visibility: visible !important;
+                opacity: 1 !important;
                 max-width: 80%;
                 height: auto;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+            }
+
+            header p,
+            header .text-gray-300,
+            header .text-white {
+                color: #1f2937 !important;
             }
         }
 
