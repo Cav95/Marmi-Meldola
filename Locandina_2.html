@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmi Meldola - Locandina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'stone-dark': '#2c2c2c',
+                        'stone-light': '#f4f4f4',
+                        'gold-accent': '#c5a059'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @page {
+            size: A5;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            /* Mantieni i contatti allineati orizzontalmente */
+            .contatti-grid {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 0.75rem !important;
+            }
+        }
+
+        body {
+            background: linear-gradient(135deg, #f4f4f4 0%, #e8e8e8 100%);
+        }
+
+        .poster-container {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            font-size: 10px;
+        }
+
+        .gradient-gold {
+            background: linear-gradient(135deg, #c5a059 0%, #d4af6a 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-stone-light flex items-center justify-center p-2">
+
+    <div class="poster-container bg-white max-w-[148mm] w-full relative overflow-hidden">
+        
+        <!-- Header con Logo -->
+        <div class="bg-gradient-to-br from-stone-dark to-gray-800 text-white py-4 px-4 text-center relative">
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+            <img src="logo-marmi-meldola-600x102.png" alt="Marmi Meldola" class="mx-auto w-48 mb-2 relative z-10 brightness-0 invert" />
+            <div class="w-16 h-0.5 gradient-gold mx-auto mb-2 relative z-10"></div>
+            <h2 class="text-sm font-light tracking-wide relative z-10">Lavorazione Marmi e Pietre Naturali</h2>
+        </div>
+
+        <!-- Corpo della Locandina -->
+        <div class="px-4 py-3">
+            
+            <!-- Presentazione -->
+            <div class="mb-3 text-center">
+                <h3 class="font-serif text-base font-bold mb-2 text-stone-dark">L'Arte di Plasmare la Natura</h3>
+                <div class="w-12 h-0.5 gradient-gold mx-auto mb-2"></div>
+                <p class="text-xs text-gray-700 leading-snug max-w-4xl mx-auto">
+                    Artigianalità e tecnologia si fondono per trasformare <strong>marmi, pietre naturali, graniti, onici e travertini</strong> 
+                    in prodotti unici e personalizzati. Realizziamo rivestimenti e pavimenti, sia per interni che per esterni, 
+                    che siano unici e duraturi nel tempo.
+                </p>
+            </div>
+
+            <!-- Materiali e Lavorazioni in 2 colonne -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+                
+                <!-- Materiali -->
+                <div class="bg-stone-50 p-3 rounded border border-stone-200">
+                    <div class="flex items-center mb-2">
+                        <div class="w-6 h-6 gradient-gold rounded-full flex items-center justify-center mr-2">
+                            <i class="fas fa-gem text-white text-xs"></i>
+                        </div>
+                        <h4 class="font-serif text-sm font-bold text-stone-dark">I Nostri Materiali</h4>
+                    </div>
+                    <ul class="grid grid-cols-2 gap-1.5 text-gray-700">
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
+                            <span class="font-medium text-xs">Marmi</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
+                            <span class="font-medium text-xs">Graniti</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
+                            <span class="font-medium text-xs">Pietre Naturali</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
+                            <span class="font-medium text-xs">Quarziti</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
+                            <span class="font-medium text-xs">Dekton</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
+                            <span class="font-medium text-xs">Agglomerati</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
+                            <span class="font-medium text-xs">Lapitec</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
+                            <span class="font-medium text-xs">Quarziti K-Proof</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Lavorazioni -->
+                <div class="bg-stone-50 p-3 rounded border border-stone-200">
+                    <div class="flex items-center mb-2">
+                        <div class="w-6 h-6 gradient-gold rounded-full flex items-center justify-center mr-2">
+                            <i class="fas fa-tools text-white text-xs"></i>
+                        </div>
+                        <h4 class="font-serif text-sm font-bold text-stone-dark">I nostri prodotti</h4>
+                    </div>
+                    <ul class="grid grid-cols-2 gap-1.5 text-gray-700">
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-check text-gold-accent" style="font-size: 8px;"></i>
+                            <span class="font-medium text-xs">Piani cucine</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-check text-gold-accent" style="font-size: 8px;"></i>
+                            <span class="font-medium text-xs">Soglie e Banchine</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-check text-gold-accent" style="font-size: 8px;"></i>
+                            <span class="font-medium text-xs">Tavoli</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-check text-gold-accent" style="font-size: 8px;"></i>
+                            <span class="font-medium text-xs">Piani di Lavoro</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-check text-gold-accent" style="font-size: 8px;"></i>
+                            <span class="font-medium text-xs">Scale</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-check text-gold-accent" style="font-size: 8px;"></i>
+                            <span class="font-medium text-xs">Lapidi</span>
+                        </li>
+                    <!--    <li class="flex items-center space-x-1">
+                            <i class="fas fa-check text-gold-accent" style="font-size: 8px;"></i>
+                            <span class="font-medium text-xs">Fiammatura/Spazzolatura</span>
+                        </li>
+                        <li class="flex items-center space-x-1">
+                            <i class="fas fa-check text-gold-accent" style="font-size: 8px;"></i>
+                            <span class="font-medium text-xs">Sabbiatura/Spazzolatura</span>
+                        </li>-->
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Contatti in evidenza -->
+            <div class="bg-gradient-to-r from-stone-dark to-gray-800 text-white p-3 rounded">
+                <h4 class="font-serif text-base font-bold mb-2 text-center">Contattaci</h4>
+                <div class="w-12 h-0.5 gradient-gold mx-auto mb-3"></div>
+                
+                <div class="contatti-grid grid grid-cols-1 md:grid-cols-3 gap-3">
+                    
+                    <!-- Indirizzo -->
+                    <div class="text-center">
+                        <div class="w-8 h-8 gradient-gold rounded-full flex items-center justify-center mx-auto mb-1">
+                            <i class="fas fa-map-marker-alt text-sm text-white"></i>
+                        </div>
+                        <h5 class="font-semibold text-xs mb-1">Sede</h5>
+                        <p class="text-gray-300 font-light text-xs leading-tight">via G. Galilei, 42<br>47014 Meldola (FC)</p>
+                    </div>
+
+                    <!-- Telefono -->
+                    <div class="text-center">
+                        <div class="w-8 h-8 gradient-gold rounded-full flex items-center justify-center mx-auto mb-1">
+                            <i class="fas fa-phone text-sm text-white"></i>
+                        </div>
+                        <h5 class="font-semibold text-xs mb-1">Telefono</h5>
+                        <p class="text-gray-300 font-light text-xs leading-tight">Tel.: <strong>0543-493252</strong></p>
+                        <p class="text-gray-300 font-light text-xs leading-tight">Cel.: <strong>347-3115637</strong></p>
+                    </div>
+
+                    <!-- Email e Web -->
+                    <div class="text-center">
+                        <div class="w-8 h-8 gradient-gold rounded-full flex items-center justify-center mx-auto mb-1">
+                            <i class="fas fa-globe text-sm text-white"></i>
+                        </div>
+                        <h5 class="font-semibold text-xs mb-1">Online</h5>
+                        <p class="text-gold-accent font-medium text-xs leading-tight">info@marmimeldola.com</p>
+                        <p class="text-gold-accent font-medium text-xs leading-tight">www.marmimeldola.com</p>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-2 pt-2 border-t border-gray-600">
+                    <p class="text-xs text-gray-400">P. IVA: 00357090406</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-stone-900 text-center py-2 px-4">
+            <p class="text-gray-400 text-xs">© Copyright Marmi Meldola. Tutti i diritti riservati.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
