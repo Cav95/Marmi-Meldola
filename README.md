@@ -18,13 +18,5 @@ Istruzioni rapide per esportare in PDF
 	 - Scala 100% (se necessario regolare per adattare).
 4. Salva il PDF e verifica che tutte le immagini siano incorporate.
 
-Note e suggerimenti
-- I file HTML riferiscono immagini con percorsi tipo `upload/` (consigliare l'uso di slash `/` per compatibilità web).
-- Controlla che la cartella `upload/` includa tutte le risorse necessarie prima della stampa.
-- Se vuoi, posso:
-	- sistemare i percorsi immagine (backslash → forward slash),
-	- generare PDF automaticamente (script/Chrome headless),
-	- aggiungere licenza o nota dei crediti.
-
 Contatti
 Per info: info@marmimeldola.com
