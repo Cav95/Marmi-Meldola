@@ -49,6 +49,12 @@
                 grid-template-columns: repeat(3, 1fr) !important;
                 gap: 0.75rem !important;
             }
+
+            /* In stampa i materiali passano a 3 colonne per ridurre l'altezza del blocco */
+            .materiali-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 0.25rem !important;
+            }
         }
 
         body {
@@ -106,7 +112,7 @@
                         </div>
                         <h4 class="font-serif text-sm font-bold text-stone-dark">I Nostri Materiali</h4>
                     </div>
-                    <ul class="grid grid-cols-2 gap-1.5 text-gray-700">
+                    <ul class="materiali-grid grid grid-cols-2 gap-1.5 text-gray-700">
                         <li class="flex items-center space-x-1">
                             <i class="fas fa-circle text-gold-accent" style="font-size: 6px;"></i>
                             <span class="font-medium text-xs">Marmi</span>
