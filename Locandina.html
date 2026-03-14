@@ -93,6 +93,62 @@
             border-radius: 9999px;
             background: transparent;
         }
+
+        /* Compact the contact block (icons, gaps, fonts) to reduce height */
+        .loc-contact {
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+
+        .loc-contact .w-8,
+        .loc-contact .h-8 {
+            width: 28px !important;
+            height: 28px !important;
+        }
+
+        .loc-contact h4 {
+            margin-bottom: 0.25rem !important;
+            font-size: 12px !important;
+        }
+
+        .loc-contact h5 {
+            margin-bottom: 0.125rem !important;
+            font-size: 11px !important;
+        }
+
+        .loc-contact p, .loc-contact a p {
+            font-size: 11px !important;
+            line-height: 1.1 !important;
+            margin: 0 !important;
+        }
+
+        .loc-contact .contatti-grid {
+            gap: 0.4rem !important;
+        }
+
+        /* Tighter social icons */
+        .loc-contact .social-icons a {
+            width: 28px !important;
+            height: 28px !important;
+        }
+
+        @media print {
+            .loc-contact {
+                padding-top: 0.25rem !important;
+                padding-bottom: 0.25rem !important;
+            }
+
+            .loc-contact .w-8,
+            .loc-contact .h-8,
+            .loc-contact .social-icons a {
+                width: 22px !important;
+                height: 22px !important;
+            }
+
+            .loc-contact p, .loc-contact a p {
+                font-size: 7.5px !important;
+            }
+        }
     </style>
 </head>
 
@@ -289,11 +345,6 @@
                 </div>
             </div>
 
-        </div>
-
-        <!-- Footer -->
-        <div class="bg-stone-900 text-center py-2 px-4">
-            <p class="text-gray-400 text-xs" hidden>© Copyright Marmi Meldola. Tutti i diritti riservati.</p>
         </div>
 
     </div>
