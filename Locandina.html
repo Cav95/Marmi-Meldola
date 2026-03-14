@@ -39,6 +39,11 @@
                 print-color-adjust: exact;
             }
 
+            /* Riduci icone social in stampa */
+            .social-icons i {
+                font-size: 10px !important;
+            }
+
             .no-print {
                 display: none;
             }
@@ -73,6 +78,20 @@
 
         .gradient-gold {
             background: linear-gradient(135deg, #c5a059 0%, #d4af6a 100%);
+        }
+
+        .social-icons i {
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 9999px;
+            background: transparent;
         }
     </style>
 </head>
@@ -255,12 +274,18 @@
                         <a href="https://www.marmimeldola.com">
                             <p class="text-gold-accent font-medium text-xs leading-tight">www.marmimeldola.com</p>
                         </a>
+                        <div class="mt-2 social-icons flex justify-center space-x-2">
+                            <a href="https://www.facebook.com/marmimeldola" target="_blank" rel="noopener"
+                                class="text-white bg-transparent">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/marmi_meldola" target="_blank" rel="noopener"
+                                class="text-white bg-transparent">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
                     </div>
 
-                </div>
-
-                <div class="text-center mt-2 pt-2 border-t border-gray-600">
-                    <p class="text-xs text-gray-400">P. IVA: 00357090406</p>
                 </div>
             </div>
 
